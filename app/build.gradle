@@ -5,12 +5,12 @@ plugins {
 
 android {
     namespace 'com.example.skcbinterview'
-    compileSdk 32
+    compileSdk 33
 
     defaultConfig {
         applicationId "com.example.skcbinterview"
         minSdk 21
-        targetSdk 32
+        targetSdk 33
         versionCode 1
         versionName "1.0"
 
@@ -52,7 +52,6 @@ dependencies {
     implementation 'androidx.lifecycle:lifecycle-service:2.6.1'
 
     //仿制 ios Dialog
-    implementation 'com.github.mylhyl:Android-CircleDialog:5.3.8'
 
     //Retrofit
     implementation 'com.squareup.retrofit2:retrofit:2.9.0'
@@ -61,8 +60,9 @@ dependencies {
     implementation 'com.squareup.okhttp3:logging-interceptor:4.9.0'
 
     //TcPing
-    implementation 'com.github.stealthcopter:AndroidNetworkTools:0.4.5.3'
 
     //Coroutines
-    implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-android:1.6.1'
+    implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-android:1.6.4'
+
+    implementation(platform("org.jetbrains.kotlin:kotlin-bom:1.8.0"))
 }

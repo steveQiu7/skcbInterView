@@ -9,7 +9,7 @@ import java.util.concurrent.TimeUnit
 
 class ApiClient(val context: Context) {
 
-    val apiClientService by lazy { provideApiService() }
+    val apiClientService:ApiService by lazy { provideApiService() }
 
     companion object{
         const val CONNECTION_TIME_OUT = 20000L
@@ -37,9 +37,9 @@ class ApiClient(val context: Context) {
         }
     }
 
-    private fun provideApiService():ApiClient{
+    private fun provideApiService():ApiService{
         val okHttpClient = provideOkHttpClient()
         val retrofit = provideRetrofit(okHttpClient)
-        return retrofit.create(ApiClient::class.java)
+        return retrofit.create(ApiService::class.java)
     }
 }
