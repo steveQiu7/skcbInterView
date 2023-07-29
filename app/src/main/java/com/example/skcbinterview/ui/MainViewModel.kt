@@ -7,6 +7,7 @@ import com.example.skcbinterview.data.ApiRepository
 import com.example.skcbinterview.data.ResourceStatus
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.flow.collect
 
 class MainViewModel(private val apiRepository: ApiRepository) : ViewModel() {
 
@@ -34,6 +35,21 @@ class MainViewModel(private val apiRepository: ApiRepository) : ViewModel() {
                 }
             }
         }
+    }
 
+    suspend fun apiGetPlantData(){
+        apiRepository.getApiPlantData().collect(){
+            when (it) {
+                is ResourceStatus.Success -> {
+                    Log.d(TAG, "$it")
+                }
+                is ResourceStatus.Error -> {
+
+                }
+                is ResourceStatus.Loading -> {
+
+                }
+            }
+        }
     }
 }

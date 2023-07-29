@@ -96,7 +96,8 @@ class MainActivity : AppCompatActivity() {
 
     private fun getApi() {
         CoroutineScope(Dispatchers.IO).launch {
-            mMainViewModel.apiGetMuseumIntroduction()
+            //mMainViewModel.apiGetMuseumIntroduction()
+            mMainViewModel.apiGetPlantData()
         }
     }
 
