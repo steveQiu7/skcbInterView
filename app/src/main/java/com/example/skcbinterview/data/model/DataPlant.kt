@@ -23,7 +23,7 @@ data class DataPlant(
 
     data class DataPlantInfo(
 
-        @SerializedName("F_Name_Ch")
+        @SerializedName("\uFEFFF_Name_Ch")
         val fNameCh:String,
 
         @SerializedName("F_Name_En")

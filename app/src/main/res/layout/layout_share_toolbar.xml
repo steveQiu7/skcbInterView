@@ -1,22 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
-<com.google.android.material.appbar.AppBarLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:theme="@style/Theme.DrawerNavMain.PopupOverly"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent">
+<layout>
 
-    <androidx.appcompat.widget.Toolbar
-        android:id="@+id/tbShareAc"
-        app:popupTheme="@style/Theme.DrawerNavMain.PopupOverly"
+    <com.google.android.material.appbar.AppBarLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:theme="@style/Theme.DrawerNavMain.PopupOverly"
         android:layout_width="match_parent"
-       android:layout_height="?attr/actionBarSize">
+        android:layout_height="match_parent">
 
-        <TextView
-            android:id="@+id/tvTbShareAc"
-            android:textSize="16sp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/tbShareAc"
+            app:popupTheme="@style/Theme.DrawerNavMain.PopupOverly"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize">
 
-    </androidx.appcompat.widget.Toolbar>
+            <TextView
+                android:id="@+id/tvTbShareAc"
+                android:textSize="16sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
 
-</com.google.android.material.appbar.AppBarLayout>
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+</layout>

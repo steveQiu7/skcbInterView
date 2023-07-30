@@ -1,20 +1,16 @@
 package com.example.skcbinterview.ui
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.MenuItem
+import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.Toolbar
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import com.example.skcbinterview.R
 import com.example.skcbinterview.data.ApiClient
 import com.example.skcbinterview.data.ApiRepository
-import com.example.skcbinterview.data.ApiService
 import com.example.skcbinterview.data.ViewModelFactory
 import com.example.skcbinterview.databinding.ActivityMainBinding
-import kotlinx.coroutines.CoroutineScope
-import kotlinx.coroutines.Dispatchers
-import kotlinx.coroutines.launch
 
 class MainActivity : AppCompatActivity() {
 
@@ -31,7 +27,6 @@ class MainActivity : AppCompatActivity() {
         initView()
         initFragList()
         setViewPager()
-        getApi()
     }
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
@@ -94,18 +89,11 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
-    private fun getApi() {
-        CoroutineScope(Dispatchers.IO).launch {
-            //mMainViewModel.apiGetMuseumIntroduction()
-            mMainViewModel.apiGetPlantData()
-        }
-    }
-
     private fun setToolBar(toolbar: Toolbar, isHomeBtnEnable: Boolean) {
         setSupportActionBar(toolbar)
         supportActionBar?.setHomeButtonEnabled(isHomeBtnEnable)
         supportActionBar?.setDisplayHomeAsUpEnabled(isHomeBtnEnable)
         supportActionBar?.setHomeAsUpIndicator(R.drawable.ic_dehaze)
-        supportActionBar?.title = getString(R.string.mainAc_toolbar_title_taipei_zoo)
+        supportActionBar?.title = getString(R.string.main_ac_toolbar_title_taipei_zoo)
     }
 }

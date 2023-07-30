@@ -1,6 +1,24 @@
 <resources>
     <string name="app_name">skcbInterView</string>
 
-    <string name="mainAc_toolbar_title_taipei_zoo">臺北市立動物園</string>
+    <!--share-->
+    <string name="share_e_memo_default">無休館資訊</string>
+
+    <!--com.example.skcbinterview.ui.MainActivity-->
+    <string name="main_ac_toolbar_title_taipei_zoo">臺北市立動物園</string>
+
+    <!--com.example.skcbinterview.ui.MainFragment-->
+
+
+    <!--com.example.skcbinterview.ui.ParkFragment-->
+    <string name="park_frag_e_url">此網頁開啟</string>
+    <string name="park_frag_plant_data">植物資料</string>
+    
+    <!--com.example.skcbinterview.ui.PlantFragment-->
+    <string name="plant_frag_also_know_title">別名:</string>
+    <string name="plant_frag_brief_title">簡介:</string>
+    <string name="plant_frag_feature_title">辨認方式:</string>
+    <string name="plant_frag_function_title">功能性:</string>
+    <string name="plant_frag_update">最後更新:</string>
 
 </resources>
