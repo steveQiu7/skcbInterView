@@ -55,10 +55,12 @@ class MainActivity : AppCompatActivity() {
                 1 -> {
                     mVB.vp2MainAc.setCurrentItem(1,false)
                     supportActionBar?.setHomeAsUpIndicator(R.drawable.ic_arrow_back)
+                    supportActionBar?.title = mMainViewModel.selectDataMuseumIntroductionInfo.value?.eName
                 }
                 2 -> {
                     mVB.vp2MainAc.setCurrentItem(2,false)
                     supportActionBar?.setHomeAsUpIndicator(R.drawable.ic_arrow_back)
+                    supportActionBar?.title = mMainViewModel.selectDataPlantInfo.value?.fNameCh
                 }
             }
         }
@@ -82,10 +84,12 @@ class MainActivity : AppCompatActivity() {
             1 -> {
                 mVB.vp2MainAc.setCurrentItem(0,false)
                 supportActionBar?.setHomeAsUpIndicator(R.drawable.ic_dehaze)
+                supportActionBar?.title = getString(R.string.main_ac_toolbar_title_taipei_zoo)
             }
             2 -> {
                 mVB.vp2MainAc.setCurrentItem(1,false)
                 supportActionBar?.setHomeAsUpIndicator(R.drawable.ic_arrow_back)
+                supportActionBar?.title = mMainViewModel.selectDataMuseumIntroductionInfo.value?.eName
             }
         }
     }
