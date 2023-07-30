@@ -1,4 +1,4 @@
-package com.example.skcbinterview.ui
+package com.example.skcbinterview.ui.vp2Adapter
 
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentActivity

@@ -11,6 +11,7 @@ import com.example.skcbinterview.data.ApiClient
 import com.example.skcbinterview.data.ApiRepository
 import com.example.skcbinterview.data.ViewModelFactory
 import com.example.skcbinterview.databinding.ActivityMainBinding
+import com.example.skcbinterview.ui.vp2Adapter.MainVp2Adapter
 
 class MainActivity : AppCompatActivity() {
 
